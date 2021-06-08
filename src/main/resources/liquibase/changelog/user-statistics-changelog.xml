@@ -1,0 +1,18 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet  id="users-statistics"  author="ATomaszewski">
+        <createTable  tableName="users_statistics">
+            <column  name="login"  type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column  name="request_count"  type="bigint"/>
+            <column  name="version"  type="int"/>
+        </createTable>
+
+        <addPrimaryKey constraintName="pk__users_statistics" tableName="users_statistics" columnNames="login"/>
+    </changeSet>
+</databaseChangeLog>

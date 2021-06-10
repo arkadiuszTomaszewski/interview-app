@@ -1,5 +1,5 @@
 # User Statistics App
-This app make calculation for users fetching from github and receive statistic for this users by rest api. 
+App make calculation for users downloaded from github and returns statistic for this users by rest api. 
 ## Application startup
 0. build project using `mvn clean package`
 
